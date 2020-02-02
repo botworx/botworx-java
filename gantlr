@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export CLASSPATH=".:/usr/local/lib/antlr-4.7.1-complete.jar:./build/classes/java/main:$CLASSPATH"
+export PATH="./build/classes/java/main:./build/generated-src/antlr/main:./src/main/antlr:${PATH}"
+java -cp "./build/classes/java/main:/usr/local/lib/antlr-4.7.1-complete.jar" org.antlr.v4.gui.TestRig ./src/main/antlr/Mia "$@"
